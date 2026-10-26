@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ar_track_alvar</name>
+  <version>0.7.1</version>
+  <description>
+    This package is a ROS 2 wrapper for ALVAR, an open source AR tag tracking
+    library.
+  </description>
+  <author email="sniekum@cs.umass.edu">Scott Niekum</author>
+  <maintainer email="sniekum@cs.umass.edu">Scott Niekum</maintainer>
+  <maintainer email="130s@2000.jukuin.keio.ac.jp">Isaac I.Y. Saito</maintainer>
+  <license>LGPL-2.1</license>
+  <url type="website">http://ros.org/wiki/ar_track_alvar</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>ar_track_alvar_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>geometry_msgs</depend>
+  <depend>image_transport</depend>
+  <depend>pcl_conversions</depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>tinyxml</depend>
+  <depend>visualization_msgs</depend>
+
+  <build_depend>eigen</build_depend>
+  <build_depend>libopencv-dev</build_depend>
+  <build_depend>libpcl-dev</build_depend>
+  <build_depend>pkg-config</build_depend>
+
+  <exec_depend>eigen</exec_depend>
+  <exec_depend>libopencv-dev</exec_depend>
+  <exec_depend>libpcl-dev</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,16 @@
+# Common parameters shared by every ar_track_alvar node.
+#
+# This file replaces cfg/Params.cfg. In ROS 1 those values were exposed through
+# dynamic_reconfigure; in ROS 2 every node declares them as parameters and can
+# still be changed at runtime:
+#
+#   ros2 param set /ar_track_alvar marker_size 4.4
+#
+# Tracker specific parameters (max_frequency, marker_resolution, marker_margin,
+# med_filt_size, enabled, output_frame, bundle_files, ...) are set by the
+# launch files in ../launch.
+/**:
+  ros__parameters:
+    marker_size: 10.0
+    max_new_marker_error: 0.08
+    max_track_error: 0.2

@@ -1,0 +1,44 @@
+License index for this repository
+=================================
+
+This repository is an unofficial ROS 2 port of the ROS 1 package
+`ar_track_alvar` (https://github.com/ros-perception/ar_track_alvar, branch
+`noetic-devel`, commit a857aab4d6ac144478fb92f6624e0088473f4b33).
+
+The upstream package is itself mixed-licensed, and the port keeps its
+copyright notices and licenses. This file is an index of those licenses; it
+does not relicense any file. Where a source file header states a license, that
+header governs that file.
+
+1. ALVAR library (LGPL-2.1)
+   Paths:
+     src/ar_track_alvar/src/
+     src/ar_track_alvar/include/ar_track_alvar/
+   Copyright (C) 2007-2012 VTT Technical Research Centre of Finland.
+   The full license text is in LICENSES/LGPL-2.1.txt.
+
+2. ROS node and helper code (BSD-3-Clause)
+   Paths:
+     src/ar_track_alvar/nodes/
+     src/ar_track_alvar/include/ar_track_alvar/filter/
+     src/ar_track_alvar/src/kinect_filtering.cpp
+     src/ar_track_alvar/src/medianFilter.cpp
+   Copyright (C) 2008 Willow Garage, Inc. and 2012 Scott Niekum.
+   The BSD-3-Clause text is reproduced in the header of each of these files.
+
+3. Messages (BSD)
+   Path: src/ar_track_alvar_msgs/
+   Distributed under the terms declared in its package.xml and file headers.
+
+4. Assets and configuration
+   Paths: src/ar_track_alvar/bundles/, src/ar_track_alvar/markers/,
+          src/ar_track_alvar/launch/, src/ar_track_alvar/config/
+   These files come from the upstream package and are distributed as part of
+   it. See the upstream repository for their provenance.
+
+The names of the original projects, organisations and authors are used only to
+describe the origin of the code. This port is not affiliated with, sponsored
+by, or endorsed by them.
+
+The software is provided "as is", without warranty of any kind, as stated in
+the applicable license texts.
